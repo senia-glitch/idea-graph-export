@@ -5,7 +5,7 @@ from __future__ import annotations
 import time
 from pathlib import Path
 
-from ideagraph_core import DETAIL, HUMAN, PROPOSED, ROOT_KIND, author_name
+from idea_graph_core import DETAIL, HUMAN, PROPOSED, ROOT_KIND, author_name
 
 __version__ = "0.1.0"
 

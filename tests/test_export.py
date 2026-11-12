@@ -1,7 +1,7 @@
 import pytest
 
-from ideagraph_core import HUMAN, Store
-from ideagraph_export import FILE_NAME, manifest, render, run
+from idea_graph_core import HUMAN, Store
+from idea_graph_export import FILE_NAME, manifest, render, run
 
 
 class Ctx:
