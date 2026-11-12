@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ideagraph-export"
+version = "0.1.0"
+description = "Выгрузка графа идеи в читаемый документ, без модели"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["ideagraph-core @ git+https://github.com/senia-glitch/idea-graph-core.git"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.entry-points."ideagraph.packages"]
+export = "ideagraph_export:manifest"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ideagraph_export = ["*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
