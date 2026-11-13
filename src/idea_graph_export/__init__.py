@@ -34,8 +34,6 @@ def _one_line(text: str) -> str:
 
 def _chosen(decision: dict) -> str:
     chosen = decision.get("chosen") or {}
-    if chosen.get("type") == "custom":
-        return "своё: " + str(chosen.get("value", ""))
     if chosen.get("type") == "rejected":
         return "все варианты отклонены"
     return str(chosen.get("value", ""))

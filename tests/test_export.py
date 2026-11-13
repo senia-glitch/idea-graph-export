@@ -17,7 +17,7 @@ def store(tmp_path):
         {"op": "add_card", "kind": "решение", "title": "Онлайн-запись", "body": "Пациент видит\nсвободные окна",
          "parent": "@f", "ref": "z",
          "decision": {"question": "Как записываться?", "options": ["Онлайн", "По звонку"],
-                      "chosen": {"type": "option", "index": 1, "value": "Онлайн"}, "by": "decider",
+                      "chosen": {"type": "choice", "indexes": [1], "values": ["Онлайн"], "text": "", "value": "Онлайн"}, "by": "decider",
                       "assumption": True, "rationale": "Так дешевле"}},
         {"op": "add_card", "kind": "требование", "title": "Пациент занимает окно", "parent": "@z",
          "attrs": {"formalize.code": "FR-1", "formalize.acceptance": ["Окно исчезает у других за 5 секунд"]}},
